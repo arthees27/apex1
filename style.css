@@ -1,85 +1,102 @@
-/* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: url('bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
 
 .container {
-    max-width: 900px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px #000;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px black;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 header h1 span {
-    color: #00ffff;
+  color: #00ffff;
 }
 
-.about {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 30px;
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  margin-bottom: 10px;
+  object-fit: cover;
 }
 
-.about img {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid #00ffff;
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #00ffff;
+  margin-bottom: 10px;
 }
 
 ul {
-    padding-left: 20px;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 ul li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-.projects a {
-    color: #00ffff;
-    text-decoration: none;
-}
-
-.projects a:hover {
-    text-decoration: underline;
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 button {
-    background-color: #00ffff;
-    color: black;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: #00ffff;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #00cccc;
+  background-color: #00cccc;
+}
+
+#taskList li {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    opacity: 0.7;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.message {
+  font-size: 0.9rem;
 }
